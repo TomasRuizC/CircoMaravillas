@@ -86,6 +86,11 @@ img {
   color: rgba(255, 255, 0, 0.7);
 }
 
+.active {
+  padding: auto;
+  border-bottom: 2px solid var(--yellow);
+}
+
 .main {
   flex-grow: 1;
   display: flex;
@@ -95,16 +100,35 @@ img {
 }
 
 .img__principal {
-  width: 579px;
+  width: 100%;
+  max-width: 579px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/*COMIENZO INDEX*/
+/*INICIO DE INDEX*/
+
+#blanco {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-position: center;
+  background-size: 100%; /* Asegura que el degradado se extienda más allá de los bordes */
+  background-repeat: no-repeat;
+}
+
+.fondo__index {
+  background-image: url("/img/fondoIndex.png");
+}
+
+.contenedor__index {
+}
 
 .title {
-  font-weight: semibold;
+  font-weight: bold;
   color: #07978c;
   text-align: center;
   font-size: 40px;
@@ -142,6 +166,64 @@ img {
 
 /*FIN INDEX*/
 
+/*INICIO ESPECTACULOS*/
+
+#azul {
+  background: radial-gradient(
+    circle,
+    rgba(13, 87, 200, 1) 0%,
+    rgba(0, 0, 255, 0) 70%
+  );
+  background-position: center;
+  background-size: 100%; /* Asegura que el degradado se extienda más allá de los bordes */
+  background-repeat: no-repeat;
+}
+
+.fondo__espectaculos {
+  background-image: url("/img/fondoEspectaculos.jpg");
+}
+
+.espectaculos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 60px;
+  width: 90%;
+}
+
+.espectaculo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.imagen__espectaculo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.titulo__espectaculo {
+  font-weight: semibold;
+  color: #ffffff;
+  text-align: left;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.descripcion__espectaculo {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: justify;
+  font-size: 18px;
+  padding: 15px;
+}
+
 .footer {
   display: flex;
   width: 100%;
@@ -172,6 +254,84 @@ img {
 #img__footer {
   height: 33px;
   width: auto;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 1em;
+  }
+
+  .navbar__list {
+    gap: 20px; /* Ajusta el espacio entre los elementos */
+  }
+
+  .navbar__item {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+    padding: 25px;
+  }
+
+  .subtitle {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+    width: 90%;
+  }
+
+  .img__principal {
+    width: 50%;
+    max-width: 90%;
+  }
+
+  .imagenes__main {
+    width: 100%;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .espectaculos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .espectaculo {
+    width: 45%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .titulo__espectaculo {
+    font-size: 20px;
+  }
+
+  .descripcion__espectaculo {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 1em;
+    align-items: center; /* Centra los contenidos del footer */
+  }
+
+  .footer__list {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0%;
+  }
+
+  .footer__item {
+    text-align: center;
+    width: auto;
+  }
+
+  #img__footer {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -261,6 +421,27 @@ img {
     margin: 0 auto;
   }
 
+  .espectaculos {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .espectaculo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .titulo__espectaculo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .descripcion__espectaculo {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .footer {
     flex-direction: column;
     padding: 1em;
@@ -316,6 +497,27 @@ img {
   .imagenes__main {
     max-width: 100%;
     display: block;
+  }
+
+  .espectaculos {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .espectaculo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .titulo__espectaculo {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .descripcion__espectaculo {
+    font-size: 14px;
+    text-align: center;
   }
 
   .footer {
