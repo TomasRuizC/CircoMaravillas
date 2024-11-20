@@ -121,10 +121,7 @@ img {
 }
 
 .fondo__index {
-  background-image: url("/img/fondoIndex.png");
-}
-
-.contenedor__index {
+  background-image: url("./img/fondoIndex.png");
 }
 
 .title {
@@ -180,7 +177,7 @@ img {
 }
 
 .fondo__espectaculos {
-  background-image: url("/img/fondoEspectaculos.jpg");
+  background-image: url("./img/fondoEspectaculos.jpg");
 }
 
 .espectaculos {
