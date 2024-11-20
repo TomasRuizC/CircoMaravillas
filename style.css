@@ -101,6 +101,8 @@ img {
   margin: 0 auto;
 }
 
+/*COMIENZO INDEX*/
+
 .title {
   font-weight: semibold;
   color: #07978c;
@@ -137,6 +139,8 @@ img {
   flex-direction: row;
   margin-top: 50px;
 }
+
+/*FIN INDEX*/
 
 .footer {
   display: flex;
@@ -208,5 +212,130 @@ img {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 1em;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: left;
+  }
+
+  .main {
+    padding: 1em;
+  }
+
+  .title {
+    font-size: 1.75rem; /* Ajusta el tamaño de la fuente */
+    padding: 20px;
+  }
+
+  .subtitle {
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente */
+    width: 90%;
+  }
+
+  .img__principal {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .multimedia__main {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imagenes__main {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 1em;
+    align-items: center; /* Centra los contenidos del footer */
+  }
+
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+  }
+
+  .footer__item {
+    text-align: center;
+    width: 100%;
+  }
+
+  #img__footer {
+    max-width: 100%;
+  }
+}
+
+/* Media queries for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5em;
+  }
+
+  .navbar__list {
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1.25rem; /* Ajusta el tamaño de la fuente */
+    padding: 15px;
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    width: 90%;
+  }
+
+  .img__principal {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .multimedia__main {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imagenes__main {
+    max-width: 100%;
+    display: block;
+  }
+
+  .footer {
+    padding: 0.5em;
+    align-items: center; /* Centra los contenidos del footer */
+  }
+
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0%;
+  }
+
+  .footer__item {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  #img__footer {
+    max-width: 100%;
   }
 }
