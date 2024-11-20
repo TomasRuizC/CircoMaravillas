@@ -121,7 +121,7 @@ img {
 }
 
 .fondo__index {
-  background-image: url("../img/fondoIndex.png");
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoIndex.png");
 }
 
 .title {
@@ -177,7 +177,7 @@ img {
 }
 
 .fondo__espectaculos {
-  background-image: url("../img/fondoEspectaculos.jpg");
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoEspectaculos.jpg");
 }
 
 .espectaculos {
