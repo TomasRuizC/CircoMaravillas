@@ -28,6 +28,7 @@ const getTicketsValues = () => {
 }
 
 const setTicketValues = () => {
+    console.log("hola")
 
     const totalText = document.querySelector(".total__comprar .total");
 
@@ -50,6 +51,7 @@ const clearSelects = () => {
     totalText.textContent = "Total: $0";
 };
 
-document.querySelectorAll('select').forEach(select => {
+document.querySelectorAll('.cantidad__dropdown').forEach(select => {
     select.addEventListener('change', setTicketValues);
 });
+document.querySelector('.provincia__dropdown').addEventListener('change', setTicketValues);
