@@ -10,7 +10,7 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
   </head>
   <body>
     <!-- contenido del sitio -->
@@ -144,8 +144,8 @@
             <option value="SantaFe">Santa Fé</option>
           </select>
           <div class="total__comprar">
-            <p class="total">Total:</p>
-            <button class="comprar">¡Comprar!</button>
+            <p class="total">Total: $0</p>
+            <button class="comprar" onclick="clearSelects()">¡Comprar!</button>
           </div>
         </main>
       </div>

@@ -6,3 +6,50 @@ const toggleMap = (event) => {
   googleMapsTd.style.display =
     googleMapsTd.style.display === "none" ? "" : "none";
 };
+
+
+const getTicketsValues = () => {
+    const ids = ['cantidadA', 'cantidadB', 'cantidadC', 'provincia'];
+    const precios = [3000, 7000, 10000];
+    const valores = {};
+    let total = 0;
+
+    ids.forEach((id, i) => {
+        const cantidad = document.querySelector(`#${id}`).value || 0;
+
+        valores[id] = id === "provincia"
+            ? cantidad
+            : { cantidad, precioTotal: cantidad * precios[i] };
+        
+        total += valores[id].precioTotal || 0;
+    });
+
+    return total;
+}
+
+const setTicketValues = () => {
+
+    const totalText = document.querySelector(".total__comprar .total");
+
+    if (!totalText) return;
+
+    totalText.textContent = `Total: $${getTicketsValues()}`;
+}
+
+
+const clearSelects = () => {
+    const ids = ['cantidadA', 'cantidadB', 'cantidadC', 'provincia'];
+
+    ids.forEach(id => {
+        document.querySelector(`#${id}`).value = id === "provincia" ? "null" : "0";
+    });
+
+    const totalText = document.querySelector(".total__comprar .total");
+
+    if (!totalText) return;
+    totalText.textContent = "Total: $0";
+};
+
+document.querySelectorAll('select .cantidad__dropdown .provincia__dropdown').forEach(select => {
+    select.addEventListener('change', setTicketValues);
+});
