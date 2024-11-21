@@ -384,6 +384,67 @@ i {
 
 /*INICIO DE CONTACTO*/
 
+.fondo__contacto {
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoSobreNosotros.png");
+}
+
+.titulo__contacto {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario button {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #222222;
+  color: white;
+  cursor: pointer;
+}
+
 /*FIN DE CONTACTO*/
 
 /*INICIO DE FAQ**/
@@ -806,6 +867,10 @@ i {
   .descripcion__espectaculo {
     font-size: 16px;
     text-align: center;
+  }
+
+  .formulario {
+    width: 100%;
   }
 
   .footer {
