@@ -50,6 +50,6 @@ const clearSelects = () => {
     totalText.textContent = "Total: $0";
 };
 
-document.querySelectorAll('select .cantidad__dropdown .provincia__dropdown').forEach(select => {
+document.querySelectorAll('select').forEach(select => {
     select.addEventListener('change', setTicketValues);
 });
