@@ -221,6 +221,150 @@ img {
   padding: 15px;
 }
 
+/*FIN ESPECTACULOS*/
+
+/*INICIO DE CIUDADES Y FECHAS*/
+
+.fondo__ciudades {
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoEntradas.png");
+}
+
+#verde {
+  background: radial-gradient(
+    circle,
+    rgba(2, 216, 198, 1) 0%,
+    rgba(0, 0, 255, 0) 70%
+  );
+  background-position: center;
+  background-size: 100%; /* Asegura que el degradado se extienda más allá de los bordes */
+  background-repeat: no-repeat;
+}
+
+.fechas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 100px;
+  width: 90%;
+  border-spacing: 10px;
+}
+
+td {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.campo__fecha,
+.campo__hora {
+  background-color: #ffe9cc;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.campo__ciudad {
+  background-color: #ffe9cc;
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.campo__mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(255, 233, 204, 0.5);
+  border: 1px solid #ffe9cc;
+}
+
+i {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.campo__entrada {
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura del td */
+  padding: 0; /* Elimina cualquier padding adicional */
+}
+
+.boton__entrada {
+  width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que el botón ocupe toda la altura del contenedor */
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bolder;
+  padding: 10px; /* Añade padding interno al botón */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total del botón */
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+/*FIN DE CIUDADES Y FECHAS*/
+
+/*INICIO DE CONTACTO*/
+
+/*FIN DE CONTACTO*/
+
+/*INICIO DE FAQ**/
+
+.fondo__faq {
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoSobreNosotros.png");
+}
+
+#fondo__opaco {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.titulo__faq {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 20px;
+}
+
+.preguntas {
+  color: #ffffff;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.pregunta {
+  margin-left: 0;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.respuesta {
+  font-weight: medium;
+  margin-left: 25px;
+  padding-left: 20px;
+  font-size: 16px;
+  margin-bottom: 30px;
+  width: 80%;
+}
+/*CIERRE DE FAQ*/
+
 .footer {
   display: flex;
   width: 100%;
