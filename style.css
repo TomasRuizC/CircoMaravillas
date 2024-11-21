@@ -786,8 +786,16 @@ i {
   }
 
   .espectaculo {
+    width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .imagen__espectaculo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .titulo__espectaculo {
@@ -864,8 +872,16 @@ i {
   }
 
   .espectaculo {
+    width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .imagen__espectaculo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .titulo__espectaculo {
@@ -874,6 +890,7 @@ i {
   }
 
   .descripcion__espectaculo {
+    width: 100%;
     font-size: 14px;
     text-align: center;
   }
