@@ -340,7 +340,7 @@ i {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -352,6 +352,7 @@ i {
   flex-direction: column;
   width: 100%;
   margin-right: 30px;
+  text-align: center;
 }
 
 .img__tarjeta {
@@ -375,9 +376,12 @@ i {
   font-family: "Albert Sans", sans-serif;
   font-weight: 300;
   color: #ffffff;
-  text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px;
+}
+
+.testimonio {
+  font-style: italic;
 }
 
 /*FIN DE SOBRE NOSOTROS*/
