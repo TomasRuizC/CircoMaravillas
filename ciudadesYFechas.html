@@ -50,187 +50,221 @@
           </ul>
         </nav>
       </header>
-
-      <main class="main" id="verde">
+      <div id="verde">
         <img
           src="img/ImagenMain.png"
           alt="Imagen Circo maravillas"
           class="img__principal"
         />
+        <main class="main">
+          <table class="fechas">
+            <tr class="fila">
+              <td class="campo__fecha">28 NOV 2024</td>
+              <td class="campo__hora">20:30</td>
+              <td class="campo__ciudad">Charcas 5058, CABA</td>
+              <td class="campo__mapa">
+                <button
+                  id="toggleMapButton1"
+                  onclick="toggleMap(event)"
+                  class="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #403c3c"
+                  ></i>
 
-        <table class="fechas">
-          <tr class="fila">
-            <td class="campo__fecha">28 NOV 2024</td>
-            <td class="campo__hora">20:30</td>
-            <td class="campo__ciudad">Charcas 5058, CABA</td>
-            <td class="campo__mapa">
-              <button id="toggleMapButton1" onclick="toggleMap(event)" class="button">
-                <i class="fa-solid fa-location-dot" style="color: #403c3c"></i>
+                  CÓMO LLEGAR
+                </button>
+              </td>
+              <td colspan="3" style="display: none" class="googleMaps">
+                <div id="mapContainer">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6678030555313!2d-58.42086242353167!3d-34.58727125663102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb580208cd68b%3A0x1dcd3c8b76192334!2sCharcas%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1732154986612!5m2!1ses-419!2sar"
+                    width="300"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+              <td class="campo__entrada">
+                <button
+                  onclick="window.location.href='entradas.html';"
+                  class="button boton__entrada"
+                >
+                  ENTRADAS
+                </button>
+              </td>
+            </tr>
+            <tr class="fila">
+              <td class="campo__fecha">29 NOV 2024</td>
+              <td class="campo__hora">21:30</td>
+              <td class="campo__ciudad">
+                San Vicente, Provincia de Buenos Aires
+              </td>
+              <td class="campo__mapa">
+                <button
+                  id="toggleMapButton2"
+                  onclick="toggleMap(event)"
+                  class="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #403c3c"
+                  ></i>
 
-                CÓMO LLEGAR
-              </button>
-            </td>
-            <td colspan="3" style="display: none" class="googleMaps">
-              <div id="mapContainer">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6678030555313!2d-58.42086242353167!3d-34.58727125663102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb580208cd68b%3A0x1dcd3c8b76192334!2sCharcas%2C%20C1425%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1732154986612!5m2!1ses-419!2sar"
-                  width="300"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </td>
-            <td class="campo__entrada">
-              <button
-                onclick="window.location.href='entradas.html';"
-                class="button boton__entrada"
-              >
-                ENTRADAS
-              </button>
-            </td>
-          </tr>
-          <tr class="fila">
-            <td class="campo__fecha">29 NOV 2024</td>
-            <td class="campo__hora">21:30</td>
-            <td class="campo__ciudad">
-              San Vicente, Provincia de Buenos Aires
-            </td>
-            <td class="campo__mapa">
-              <button id="toggleMapButton2" onclick="toggleMap(event)" class="button">
-                <i class="fa-solid fa-location-dot" style="color: #403c3c"></i>
+                  CÓMO LLEGAR
+                </button>
+              </td>
+              <td colspan="3" style="display: none" class="googleMaps">
+                <div id="mapContainer">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.271165763686!2d-58.42647022351417!3d-35.024945579867435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2d23d1665b59%3A0xe0d5e761acd8a10a!2sPlaza%20SAN%20VICENTE!5e0!3m2!1ses-419!2sar!4v1732155476062!5m2!1ses-419!2sar"
+                    width="300"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+              <td class="campo__entrada">
+                <button
+                  onclick="window.location.href='entradas.html';"
+                  class="button boton__entrada"
+                >
+                  ENTRADAS
+                </button>
+              </td>
+            </tr>
+            <tr class="fila">
+              <td class="campo__fecha">01 DIC 2024</td>
+              <td class="campo__hora">18:00</td>
+              <td class="campo__ciudad">Rio Cuarto, Córdoba</td>
+              <td class="campo__mapa">
+                <button
+                  id="toggleMapButton3"
+                  onclick="toggleMap(event)"
+                  class="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #403c3c"
+                  ></i>
 
-                CÓMO LLEGAR
-              </button>
-            </td>
-            <td colspan="3" style="display: none" class="googleMaps">
-              <div id="mapContainer">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.271165763686!2d-58.42647022351417!3d-35.024945579867435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd2d23d1665b59%3A0xe0d5e761acd8a10a!2sPlaza%20SAN%20VICENTE!5e0!3m2!1ses-419!2sar!4v1732155476062!5m2!1ses-419!2sar"
-                  width="300"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </td>
-            <td class="campo__entrada">
-              <button
-                onclick="window.location.href='entradas.html';"
-                class="button boton__entrada"
-              >
-                ENTRADAS
-              </button>
-            </td>
-          </tr>
-          <tr class="fila">
-            <td class="campo__fecha">01 DIC 2024</td>
-            <td class="campo__hora">18:00</td>
-            <td class="campo__ciudad">Rio Cuarto, Córdoba</td>
-            <td class="campo__mapa">
-              <button id="toggleMapButton3" onclick="toggleMap(event)" class="button">
-                <i class="fa-solid fa-location-dot" style="color: #403c3c"></i>
+                  CÓMO LLEGAR
+                </button>
+              </td>
+              <td colspan="3" style="display: none" class="googleMaps">
+                <div id="mapContainer">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1670.7183489415575!2d-64.34987736633175!3d-33.12389010519997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2001277266bfb%3A0x68bf56237e4b2bbd!2sPlaza%20Roca!5e0!3m2!1ses-419!2sar!4v1732155284910!5m2!1ses-419!2sar"
+                    width="300"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+              <td class="campo__entrada">
+                <button
+                  onclick="window.location.href='entradas.html';"
+                  class="button boton__entrada"
+                >
+                  ENTRADAS
+                </button>
+              </td>
+            </tr>
+            <tr class="fila">
+              <td class="campo__fecha">03 DIC 2024</td>
+              <td class="campo__hora">18:00</td>
+              <td class="campo__ciudad">
+                Bahía Blanca, Provincia de Buenos Aires
+              </td>
+              <td class="campo__mapa">
+                <button
+                  id="toggleMapButton4"
+                  onclick="toggleMap(event)"
+                  class="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #403c3c"
+                  ></i>
 
-                CÓMO LLEGAR
-              </button>
-            </td>
-            <td colspan="3" style="display: none" class="googleMaps">
-              <div id="mapContainer">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1670.7183489415575!2d-64.34987736633175!3d-33.12389010519997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d2001277266bfb%3A0x68bf56237e4b2bbd!2sPlaza%20Roca!5e0!3m2!1ses-419!2sar!4v1732155284910!5m2!1ses-419!2sar"
-                  width="300"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </td>
-            <td class="campo__entrada">
-              <button
-                onclick="window.location.href='entradas.html';"
-                class="button boton__entrada"
-              >
-                ENTRADAS
-              </button>
-            </td>
-          </tr>
-          <tr class="fila">
-            <td class="campo__fecha">03 DIC 2024</td>
-            <td class="campo__hora">18:00</td>
-            <td class="campo__ciudad">
-              Bahía Blanca, Provincia de Buenos Aires
-            </td>
-            <td class="campo__mapa">
-              <button id="toggleMapButton4" onclick="toggleMap(event)" class="button">
-                <i class="fa-solid fa-location-dot" style="color: #403c3c"></i>
+                  CÓMO LLEGAR
+                </button>
+              </td>
+              <td colspan="3" style="display: none" class="googleMaps">
+                <div id="mapContainer">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9970390109775!2d-62.265988262227154!3d-38.71787696652517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcb27e1b303d%3A0x4278ed8b6db56a20!2sPlaza%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1732155533861!5m2!1ses-419!2sar"
+                    width="300"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+              <td class="campo__entrada">
+                <button
+                  onclick="window.location.href='entradas.html';"
+                  class="button boton__entrada"
+                >
+                  ENTRADAS
+                </button>
+              </td>
+            </tr>
+            <tr class="fila">
+              <td class="campo__fecha">05 DIC 2024</td>
+              <td class="campo__hora">19:00</td>
+              <td class="campo__ciudad">Villa Constitución, Santa Fé</td>
+              <td class="campo__mapa">
+                <button
+                  id="toggleMapButton5"
+                  onclick="toggleMap(event)"
+                  class="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #403c3c"
+                  ></i>
 
-                CÓMO LLEGAR
-              </button>
-            </td>
-            <td colspan="3" style="display: none" class="googleMaps">
-              <div id="mapContainer">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.9970390109775!2d-62.265988262227154!3d-38.71787696652517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbcb27e1b303d%3A0x4278ed8b6db56a20!2sPlaza%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1732155533861!5m2!1ses-419!2sar"
-                  width="300"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </td>
-            <td class="campo__entrada">
-              <button
-                onclick="window.location.href='entradas.html';"
-                class="button boton__entrada"
-              >
-                ENTRADAS
-              </button>
-            </td>
-          </tr>
-          <tr class="fila">
-            <td class="campo__fecha">05 DIC 2024</td>
-            <td class="campo__hora">19:00</td>
-            <td class="campo__ciudad">Villa Constitución, Santa Fé</td>
-            <td class="campo__mapa">
-              <button id="toggleMapButton5" onclick="toggleMap(event)" class="button">
-                <i class="fa-solid fa-location-dot" style="color: #403c3c"></i>
-
-                CÓMO LLEGAR
-              </button>
-            </td>
-            <td colspan="3" style="display: none" class="googleMaps">
-              <div id="mapContainer">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417.2015182421979!2d-60.33407676614094!3d-33.22426296233219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76c44bb42db6f%3A0x9014e919a7424c56!2sPlaza%20Justo%20Jos%C3%A9%20de%20Urquiza!5e0!3m2!1ses-419!2sar!4v1732155592673!5m2!1ses-419!2sar"
-                  width="300"
-                  height="300"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </td>
-            <td class="campo__entrada">
-              <button
-                onclick="window.location.href='entradas.html';"
-                class="button boton__entrada"
-              >
-                ENTRADAS
-              </button>
-            </td>
-          </tr>
-        </table>
-      </main>
-
+                  CÓMO LLEGAR
+                </button>
+              </td>
+              <td colspan="3" style="display: none" class="googleMaps">
+                <div id="mapContainer">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417.2015182421979!2d-60.33407676614094!3d-33.22426296233219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b76c44bb42db6f%3A0x9014e919a7424c56!2sPlaza%20Justo%20Jos%C3%A9%20de%20Urquiza!5e0!3m2!1ses-419!2sar!4v1732155592673!5m2!1ses-419!2sar"
+                    width="300"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </td>
+              <td class="campo__entrada">
+                <button
+                  onclick="window.location.href='entradas.html';"
+                  class="button boton__entrada"
+                >
+                  ENTRADAS
+                </button>
+              </td>
+            </tr>
+          </table>
+        </main>
+      </div>
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item texto__footer">&copy; 2024 Pág.Web</li>

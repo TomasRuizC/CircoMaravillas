@@ -92,7 +92,7 @@ img {
 }
 
 .main {
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,6 +291,7 @@ td {
   box-sizing: border-box;
   background-color: rgba(255, 233, 204, 0.5);
   border: 1px solid #ffe9cc;
+  cursor: pointer;
 }
 
 i {
@@ -313,9 +314,73 @@ i {
   box-sizing: border-box; /* Incluye el padding en el tamaño total del botón */
   font-size: 24px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /*FIN DE CIUDADES Y FECHAS*/
+
+/*INICIO DE SOBRE NOSOTROS*/
+
+.fondo__aboutUs {
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoSobreNosotros.png");
+}
+
+#rojo {
+  background: radial-gradient(
+    circle,
+    rgba(203, 18, 51, 1) 0%,
+    rgba(0, 0, 255, 0) 70%
+  );
+  background-position: center;
+  background-size: 100%; /* Asegura que el degradado se extienda más allá de los bordes */
+  background-repeat: no-repeat;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  width: 90%;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.img__tarjeta {
+  width: 222px;
+  height: 222px;
+  display: block;
+  border-radius: 100%;
+  align-self: center;
+}
+
+.titulo__tarjeta {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px;
+}
+
+.descripcion__tarjeta {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+}
+
+/*FIN DE SOBRE NOSOTROS*/
 
 /*INICIO DE CONTACTO*/
 
@@ -364,6 +429,136 @@ i {
   width: 80%;
 }
 /*CIERRE DE FAQ*/
+
+/*INICIO DE ENTRADAS*/
+
+#verdeOscuro {
+  flex: 1;
+  background: radial-gradient(
+    circle,
+    rgba(9, 46, 43, 1) 0%,
+    rgba(0, 0, 255, 0) 70%
+  );
+  background-position: center;
+  background-size: 100%; /* Asegura que el degradado se extienda más allá de los bordes */
+  background-repeat: no-repeat;
+}
+
+.fondo__entradas {
+  background-image: url("https://raw.githubusercontent.com/TomasRuizC/CircoMaravillas/refs/heads/main/img/fondoEntradas.png");
+}
+
+.tarjetas__entradas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin-top: 50px;
+  width: 90%;
+}
+
+.tarjeta__entrada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  margin-right: 30px;
+  background-color: #074145;
+  height: 344px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.titulo__entrada {
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.precio__tarjeta {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.precio__tarjeta span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.beneficios__lista {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.beneficios__lista li {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#vacio {
+  color: #074145;
+}
+
+.cantidad__dropdown {
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.provincia__dropdown {
+  width: 10%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.total__comprar {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  height: 54px;
+  width: 135px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+}
+
+.comprar {
+  height: 54px;
+  width: 135px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/*CIERRE DE ENTRADAS*/
 
 .footer {
   display: flex;
@@ -451,6 +646,28 @@ i {
 
   .descripcion__espectaculo {
     font-size: 16px;
+  }
+
+  .tarjetas {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .tarjetas__entradas {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .tarjeta__entrada {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .provincia__dropdown {
+    width: 50%;
   }
 
   .footer {
@@ -659,6 +876,10 @@ i {
   .descripcion__espectaculo {
     font-size: 14px;
     text-align: center;
+  }
+
+  .cantidad__dropdown {
+    width: 30%;
   }
 
   .footer {

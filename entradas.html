@@ -51,15 +51,104 @@
           </ul>
         </nav>
       </header>
-
-      <main class="main">
+      <div id="verdeOscuro">
         <img
           src="img/ImagenMain.png"
           alt="Imagen Circo maravillas"
           class="img__principal"
         />
-      </main>
-
+        <main class="main">
+          <h2 class="titulo__faq">
+            LLEGÓ LA HORA ¡SOLO TE QUEDA ELEGIR TUS ENTRADAS!
+          </h2>
+          <div class="tarjetas__entradas">
+            <div class="tarjeta__entrada">
+              <h3 class="titulo__entrada">Pack A</h3>
+              <p class="precio__tarjeta">
+                $3000 <span class="precio__unidad">c/u</span>
+              </p>
+              <ul class="beneficios__lista">
+                <li>Ingreso al Circo</li>
+                <li>Balde pequeño de pochoclos</li>
+                <li>Asientos numerados</li>
+                <li id="vacio"></li>
+              </ul>
+              <select
+                id="cantidadA"
+                name="cantidadA"
+                class="cantidad__dropdown"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="tarjeta__entrada">
+              <h3 class="titulo__entrada">Pack B</h3>
+              <p class="precio__tarjeta">
+                $7000 <span class="precio__unidad">c/u</span>
+              </p>
+              <ul class="beneficios__lista">
+                <li>Ingreso al Circo</li>
+                <li>Balde mediano de pochoclos</li>
+                <li>Asientos numerados</li>
+                <li>Bebida a elección</li>
+              </ul>
+              <select
+                id="cantidadB"
+                name="cantidadB"
+                class="cantidad__dropdown"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="tarjeta__entrada">
+              <h3 class="titulo__entrada">Pack C</h3>
+              <p class="precio__tarjeta">
+                $10000 <span class="precio__unidad">c/u</span>
+              </p>
+              <ul class="beneficios__lista">
+                <li>Ingreso al Circo</li>
+                <li>Balde grande de pochoclos</li>
+                <li>Asientos preferenciales</li>
+                <li>Barra libre + comida</li>
+              </ul>
+              <select
+                id="cantidadC"
+                name="cantidadC"
+                class="cantidad__dropdown"
+              >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          <select name="provincia" id="provincia" class="provincia__dropdown">
+            <option value="null">Provincia</option>
+            <option value="CABA">CABA</option>
+            <option value="SanVicente">San Vicente</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="BahiaBlanca">Bahía Blanca</option>
+            <option value="SantaFe">Santa Fé</option>
+          </select>
+          <div class="total__comprar">
+            <p class="total">Total:</p>
+            <button class="comprar">¡Comprar!</button>
+          </div>
+        </main>
+      </div>
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item texto__footer">&copy; 2024 Pág.Web</li>
