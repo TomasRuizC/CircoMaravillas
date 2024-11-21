@@ -161,6 +161,12 @@ img {
   margin-top: 50px;
 }
 
+.video {
+  height: 318px;
+  width: 567px;
+  border-radius: 10px;
+}
+
 /*FIN INDEX*/
 
 /*INICIO ESPECTACULOS*/
@@ -249,6 +255,7 @@ img {
   margin-top: 100px;
   width: 90%;
   border-spacing: 10px;
+  border-collapse: collapse;
 }
 
 td {
@@ -871,6 +878,57 @@ i {
   .descripcion__espectaculo {
     font-size: 16px;
     text-align: center;
+  }
+
+  .fechas {
+    display: block;
+  }
+
+  .fechas tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .fechas td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fechas td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .campo__fecha,
+  .campo__hora,
+  .campo__ciudad {
+    text-align: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .campo__mapa,
+  .campo__entrada {
+    text-align: center;
+  }
+
+  .campo__entrada {
+    margin-bottom: 10px;
+  }
+
+  .googleMaps {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .googleMaps iframe {
+    width: 100%;
+    height: auto;
   }
 
   .formulario {
