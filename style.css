@@ -962,7 +962,7 @@ h2 {
 /* Media queries for mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .fondo__index {
-    background-image: url(/img/index-blur.jpg);
+    background-image: url(img/index-blur.jpg);
   }
   
   .header {
@@ -1066,7 +1066,7 @@ h2 {
   }
 
   .fondo__index {
-    background-image: url(/img/index-blur.jpg);
+    background-image: url(img/index-blur.jpg);
   }
 
   .tarjeta {
