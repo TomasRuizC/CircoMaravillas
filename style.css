@@ -46,6 +46,7 @@ img {
 
 .navbar {
   width: 100%;
+  display: flex;
 }
 
 .navbar__list {
@@ -75,7 +76,7 @@ img {
 
 #logo__navbar {
   height: 55px;
-  width: auto;
+  width: 58px;
 }
 
 #nav__entrada a {
@@ -348,23 +349,26 @@ i {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  padding: 30px;
-  margin-top: 50px;
   margin-bottom: 100px;
   width: 90%;
+}
+
+h2 {
+  color: #ffffff;
 }
 
 .tarjeta {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-right: 30px;
   text-align: center;
+  padding: 6em;
+  margin-bottom: 15px;
 }
 
 .img__tarjeta {
-  width: 222px;
-  height: 222px;
+  width: 90px;
+  height: 90px;
   display: block;
   border-radius: 100%;
   align-self: center;
@@ -375,7 +379,6 @@ i {
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  font-size: 22px;
   padding: 15px;
 }
 
@@ -651,7 +654,6 @@ i {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-left: 25%;
 }
 
 .texto__footer {
@@ -963,6 +965,11 @@ i {
     padding: 0.5em;
   }
 
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .navbar__list {
     gap: 10px;
   }
@@ -1045,5 +1052,24 @@ i {
 
   #img__footer {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fondo__index {
+    background-image: url(/img/index-blur.jpg);
+  }
+
+  .tarjeta {
+    padding: 1em;
+  }
+
+  .footer__list {
+    font-size: 0.6rem;
   }
 }
